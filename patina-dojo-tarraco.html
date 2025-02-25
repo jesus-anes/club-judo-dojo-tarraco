@@ -8,6 +8,7 @@
     <link rel="icon" href="images/icons/logodojotarraco.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="css/patina-dojo-tarraco.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -20,7 +21,7 @@
                 <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
                     <img src="images/icons/logodojotarraco.png" height="30" alt="Club Dojo Judo Tarraco" loading="lazy"
                         class="me-2">
-                    <span>Clubs Dojo Tarraco</span>
+                    <span>Club Dojo Tarraco</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,14 +56,15 @@
             <div class="container about">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <h1 class="font-weight-light">Club Patina Dojo Tarraco</h1>
-                        <p class="lead">
+                        <h1 class="font-weight-light" data-aos="fade-right" data-aos-duration="2000"
+                            data-aos-delay="200">Club Patina Dojo Tarraco</h1>
+                        <p class="lead" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
                             Club fundado en el año 2004, que actúa como sección del Club Judo Dojo Tarraco desde 2018.
                         </p>
                     </div>
                     <div class="col-md-6">
-                        <img class="" src="images/patina-dojo-tarraco/patina-dojo-tarraco.png"
-                            alt="Club Patina Dojo Tarraco" />
+                        <img data-aos="zoom-out" data-aos-duration="2000"
+                            src="images/patina-dojo-tarraco/patina-dojo-tarraco.png" alt="Club Patina Dojo Tarraco" />
                     </div>
                 </div>
             </div>
@@ -71,7 +73,7 @@
         <!-- Enunciado intermedio -->
         <section class="py-5">
             <div class="container">
-                <div class="card text-white bg-primary py-4 text-center">
+                <div class="card text-white bg-primary py-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="card-body">
                         <h5 class="text-white m-0">¡Únete a nuestro club y forma parte de una gran familia de
                             patinadores!
@@ -85,13 +87,13 @@
         <section class="py-5">
             <div class="container">
                 <!-- Sección Patinaje Artístico -->
-                <div class="row align-items-center">
+                <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1000">
                     <!-- Imagen -->
-                    <div class="col-lg-5 order-lg-2">
+                    <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-duration="2000">
                         <img class="img-fluid rounded mb-4" src="images/patina-dojo-tarraco/patinaje-artistico.jpg"
                             alt="Patinaje Artístico" />
                     </div>
-                    <div class="col-lg-7 order-lg-1">
+                    <div class="col-lg-7 order-lg-1" data-aos="fade-right" data-aos-duration="2000">
                         <h2 class="fw-bold">Patinaje Artístico</h2>
                         <p class="lead">
                             Con sede en el <strong>Palacio de Deportes Cataluña de la Anilla del Mediterráneo
@@ -106,7 +108,8 @@
                             complementan con sesiones específicas de flexibilidad y acondicionamiento físico.
                         </p>
                         <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#horariosArtistico" aria-expanded="false" aria-controls="horariosArtistico">
+                            data-bs-target="#horariosArtistico" aria-expanded="false" aria-controls="horariosArtistico"
+                            data-aos="fade-up" data-aos-duration="1000">
                             Horarios
                         </button>
                         <!-- Horarios -->
@@ -132,13 +135,13 @@
                     </div>
                 </div>
                 <!-- Sección Patinaje en Línea/Velocidad -->
-                <div class="row py-4 align-items-center">
+                <div class="row py-4 align-items-center" data-aos="fade-down" data-aos-duration="1000">
                     <!-- Imagen -->
-                    <div class="col-lg-7">
+                    <div class="col-lg-7" data-aos="fade-right" data-aos-duration="2000">
                         <img class="img-fluid rounded mb-4" src="images/patina-dojo-tarraco/patinaje-en-linea-.jpg"
                             alt="Patinaje en Línea/Velocidad" />
                     </div>
-                    <div class="col-lg-5">
+                    <div class="col-lg-5" data-aos="fade-left" data-aos-duration="2000">
                         <h2 class="fw-bold">Patinaje en Línea/Velocidad</h2>
                         <p class="lead">
                             Con sede en el <strong>Patinódromo de la Anilla del Mediterráneo (Tarragona)</strong>, la
@@ -151,7 +154,8 @@
                             también se ofrece un grupo de patinaje lúdico.
                         </p>
                         <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#horariosLinea" aria-expanded="false" aria-controls="horariosLinea">
+                            data-bs-target="#horariosLinea" aria-expanded="false" aria-controls="horariosLinea"
+                            data-aos="fade-down" data-aos-duration="1000">
                             Horarios
                         </button>
                         <!-- Horarios -->
@@ -268,6 +272,14 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'slide',
+            once: true
+        });
+    </script>
 </body>
 
 </html>
