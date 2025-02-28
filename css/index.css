@@ -20,6 +20,12 @@
     color: #343a40;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
 
