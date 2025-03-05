@@ -17,32 +17,70 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-                    <img src="images/icons/logodojotarraco.png" height="30" alt="Club Dojo Judo Tarraco" loading="lazy"
-                        class="me-2">
-                    <span>Club Dojo Tarraco</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botón para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Izquierda -->
+                    <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
+                        <!-- Club Dojo Tarraco con menú desplegable -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Clubs</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="judo-dojo-tarraco.html">Judo Dojo Tarraco</a></li>
-                                <li><a class="dropdown-item" href="dojo-roda.html">Dojo Roda</a></li>
-                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patina Dojo Tarraco</a>
-                                </li>
-                                <li><a class="dropdown-item" href="patina-castellvell.html">Patina Castellvell</a></li>
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="dojoTarracoDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/icons/logodojotarraco.png" alt="Tarraco" width="30" class="me-1">
+                                Club Dojo Tarraco
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dojoTarracoDropdown">
+                                <li><a class="dropdown-item" href="judo-dojo-tarraco.html">Judo</a></li>
+                                <li><a class="dropdown-item" href="jiu-jitsu-dojo-tarraco.html">Jiu-jitsu</a></li>
+                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patinaje</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="extraescolares.html">Extraescolares</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="contactos.html">Contactos</a></li>
+                        <!-- Club Dojo Roda / Judo Roda -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="dojo-roda.html">
+                                <img src="images/icons/logodojoroda.png" alt="Roda" width="30" class="me-1">
+                                Club Dojo Roda / Judo Roda
+                            </a>
+                        </li>
+                        <!-- Club Patina Castellvell -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="patina-castellvell.html">
+                                <img src="images/icons/logopatinacastellvell.png" alt="Patina" width="30" class="me-1">
+                                Club Patina Castellvell
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Parte Derecha -->
+                    <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
+                        <!-- Inicio -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <!-- Extraescolares -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="extraescolares.html">Extraescolares</a>
+                        </li>
+                        <!-- Complementarias con menú desplegable -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Complementarias
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                aria-labelledby="complementariasDropdown">
+                                <li><a class="dropdown-item" href="colonias.html">Colonias</a></li>
+                                <li><a class="dropdown-item" href="campus.html">Campus</a></li>
+                            </ul>
+                        </li>
+                        <!-- Contactos -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contactos.html">Contactos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -279,13 +317,16 @@
                 </div>
                 <!-- Columna Navegación -->
                 <div class="col-md-4 mb-3">
-                    <h5>CLUBS</h5>
+                    <a href="index.html" class="text-light text-decoration-none">
+                        <h5>CLUBS</h5>
+                    </a>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="judo-dojo-tarraco.html" class="text-light text-decoration-none">DOJO
                                 JUDO
                                 TARRACO</a>
                         </li>
-                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">DOJO RODA</a>
+                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">DOJO RODA /
+                            JUDO RODA</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco.html"
                                 class="text-light text-decoration-none">PATINA DOJO

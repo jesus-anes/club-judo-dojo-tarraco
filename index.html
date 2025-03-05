@@ -18,49 +18,86 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-                    <img src="images/icons/logodojotarraco.png" height="30" alt="Club Dojo Judo Tarraco" loading="lazy"
-                        class="me-2">
-                    <span>Club Dojo Tarraco</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botón para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Izquierda -->
+                    <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
+                        <!-- Club Dojo Tarraco con menú desplegable -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="dojoTarracoDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/icons/logodojotarraco.png" alt="Tarraco" width="30" class="me-1">
+                                Club Dojo Tarraco
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dojoTarracoDropdown">
+                                <li><a class="dropdown-item" href="judo-dojo-tarraco.html">Judo</a></li>
+                                <li><a class="dropdown-item" href="jiu-jitsu-dojo-tarraco.html">Jiu-jitsu</a></li>
+                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patinaje</a></li>
+                            </ul>
+                        </li>
+                        <!-- Club Dojo Roda / Judo Roda -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="dojo-roda.html">
+                                <img src="images/icons/logodojoroda.png" alt="Roda" width="30" class="me-1">
+                                Club Dojo Roda / Judo Roda
+                            </a>
+                        </li>
+                        <!-- Club Patina Castellvell -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="patina-castellvell.html">
+                                <img src="images/icons/logopatinacastellvell.png" alt="Patina" width="30" class="me-1">
+                                Club Patina Castellvell
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Parte Derecha -->
+                    <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
+                        <!-- Inicio -->
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Inicio</a>
                         </li>
+                        <!-- Extraescolares -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="extraescolares.html">Extraescolares</a>
+                        </li>
+                        <!-- Complementarias con menú desplegable -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Clubs</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="judo-dojo-tarraco.html">Judo Dojo Tarraco</a></li>
-                                <li><a class="dropdown-item" href="dojo-roda.html">Dojo Roda</a></li>
-                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patina Dojo Tarraco</a>
-                                </li>
-                                <li><a class="dropdown-item" href="patina-castellvell.html">Patina Castellvell</a></li>
+                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Complementarias
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                aria-labelledby="complementariasDropdown">
+                                <li><a class="dropdown-item" href="colonias.html">Colonias</a></li>
+                                <li><a class="dropdown-item" href="campus.html">Campus</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="extraescolares.html">Extraescolares</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                        <!-- Contactos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contactos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <!-- Contenido -->
     <main>
         <section class="bg-primary text-white text-center py-5">
             <div class="container">
                 <h1 class="display-4 fw-bold" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                    Descubre Clubs Dojo Tarraco
+                    Descubre Nuestro Proyecto
                 </h1>
-                <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Formando en deporte,
-                    educación y valores</p>
+                <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Formando en
+                    educación ,valores y deporte</p>
             </div>
         </section>
 
@@ -72,7 +109,8 @@
                         <h2 class="fw-normal">Quienes somos</h2>
                         <p class="lead">Dojo Tarraco es un conjunto de clubes dedicados a la formación deportiva y
                             educativa, abarcando
-                            Judo, Patinaje en línea, Patinaje artístico y más. Con más de 25 años de experiencia,
+                            Judo, Jiu-jitsu, Patinaje en línea, Patinaje artístico y más. Con más de 25 años de
+                            experiencia,
                             ofrecemos
                             actividades para todas las edades y niveles.</p>
                     </div>
@@ -134,7 +172,8 @@
                     <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
                         <a href="judo-dojo-tarraco.html" class="text-decoration-none text-reset">
                             <div class="card shadow h-100">
-                                <img src="images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.JPG" class="card-img-top" alt="Club Judo Dojo Tarraco">
+                                <img src="images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.JPG"
+                                    class="card-img-top" alt="Club Judo Dojo Tarraco">
                                 <div class="card-body d-flex flex-column text-center">
                                     <h5 class="card-title fw-bold">Club Judo Dojo Tarraco</h5>
                                     <p class="card-text lead">Nuestro club principal con enfoque en judo y valores
@@ -149,7 +188,8 @@
                     <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <a href="dojo-roda.html" class="text-decoration-none text-reset">
                             <div class="card shadow h-100">
-                                <img src="images/dojo-roda/tatami-dojo-roda.jpeg" class="card-img-top" alt="Club Judo Roda">
+                                <img src="images/dojo-roda/tatami-dojo-roda.jpeg" class="card-img-top"
+                                    alt="Club Judo Roda">
                                 <div class="card-body d-flex flex-column text-center">
                                     <h5 class="card-title fw-bold">Club Dojo Roda</h5>
                                     <p class="card-text lead">Expandiendo los valores del judo en la región.</p>
@@ -162,7 +202,8 @@
                     <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         <a href="patina-dojo-tarraco.html" class="text-decoration-none text-reset">
                             <div class="card shadow h-100">
-                                <img src="images/patina-dojo-tarraco/patinaje-en-linea.jpg" class="card-img-top" alt="Club Patina Dojo Tarraco">
+                                <img src="images/patina-dojo-tarraco/patinaje-en-linea.jpg" class="card-img-top"
+                                    alt="Club Patina Dojo Tarraco">
                                 <div class="card-body d-flex flex-column text-center">
                                     <h5 class="card-title fw-bold">Club Patina Dojo Tarraco</h5>
                                     <p class="card-text lead">Especializado en patinaje en línea y artístico.</p>
@@ -175,7 +216,8 @@
                     <div class="col-md-3 mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
                         <a href="patina-castellvell.html" class="text-decoration-none text-reset">
                             <div class="card shadow h-100">
-                                <img src="images/patina-castellvell/patinaje-artistico.jpg" class="card-img-top" alt="Club Patina Castellvell">
+                                <img src="images/patina-castellvell/patinaje-artistico.jpg" class="card-img-top"
+                                    alt="Club Patina Castellvell">
                                 <div class="card-body d-flex flex-column text-center">
                                     <h5 class="card-title fw-bold">Club Patina Castellvell</h5>
                                     <p class="card-text lead">Patinaje para todas las edades y niveles en Castellvell.
@@ -223,13 +265,16 @@
                 </div>
                 <!-- Columna Navegación -->
                 <div class="col-md-4 mb-3">
-                    <h5>CLUBS</h5>
+                    <a href="index.html" class="text-light text-decoration-none">
+                        <h5>CLUBS</h5>
+                    </a>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="judo-dojo-tarraco.html" class="text-light text-decoration-none">DOJO
                                 JUDO
                                 TARRACO</a>
                         </li>
-                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">DOJO RODA</a>
+                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">DOJO RODA /
+                                JUDO RODA</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco.html"
                                 class="text-light text-decoration-none">PATINA DOJO

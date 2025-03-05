@@ -19,33 +19,70 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
-                    <img src="images/icons/logodojotarraco.png" height="30" alt="Club Dojo Judo Tarraco" loading="lazy"
-                        class="me-2">
-                    <span>Club Dojo Tarraco</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botón para dispositivos móviles -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <!-- Izquierda -->
+                    <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
+                        <!-- Club Dojo Tarraco con menú desplegable -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button"
-                                aria-expanded="false">Clubs</a>
-                            <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item active" href="judo-dojo-tarraco.html">Judo Dojo Tarraco</a>
-                                </li>
-                                <li><a class="dropdown-item" href="dojo-roda.html">Dojo Roda</a></li>
-                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patina Dojo Tarraco</a>
-                                </li>
-                                <li><a class="dropdown-item" href="patina-castellvell.html">Patina Castellvell</a></li>
+                            <a class="nav-link dropdown-toggle fw-bold active" href="#" id="dojoTarracoDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="images/icons/logodojotarraco.png" alt="Tarraco" width="30" class="me-1">
+                                Club Dojo Tarraco
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dojoTarracoDropdown">
+                                <li><a class="dropdown-item active" href="judo-dojo-tarraco.html">Judo</a></li>
+                                <li><a class="dropdown-item" href="jiu-jitsu-dojo-tarraco.html">Jiu-jitsu</a></li>
+                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patinaje</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="extraescolares.html">Extraescolares</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contactos.html">Contactos</a></li>
+                        <!-- Club Dojo Roda / Judo Roda -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="dojo-roda.html">
+                                <img src="images/icons/logodojoroda.png" alt="Roda" width="30" class="me-1">
+                                Club Dojo Roda / Judo Roda
+                            </a>
+                        </li>
+                        <!-- Club Patina Castellvell -->
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="patina-castellvell.html">
+                                <img src="images/icons/logopatinacastellvell.png" alt="Patina" width="30" class="me-1">
+                                Club Patina Castellvell
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Parte Derecha -->
+                    <ul class="navbar-nav align-items-center ms-auto mb-2 mb-lg-0">
+                        <!-- Inicio -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <!-- Extraescolares -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="extraescolares.html">Extraescolares</a>
+                        </li>
+                        <!-- Complementarias con menú desplegable -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Complementarias
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
+                                aria-labelledby="complementariasDropdown">
+                                <li><a class="dropdown-item" href="colonias.html">Colonias</a></li>
+                                <li><a class="dropdown-item" href="campus.html">Campus</a></li>
+                            </ul>
+                        </li>
+                        <!-- Contactos -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactos.html">Contactos</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -84,8 +121,40 @@
                         </p>
                     </div>
                     <div class="col-md-6" data-aos="fade-left" data-aos-duration="1500">
-                        <img src="images/judo-dojo-tarraco/poster-club-judo-dojo-tarraco.jpg"
-                            alt="Instalaciones del Club" class="img-fluid rounded">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/judo-dojo-tarraco/campeona.jpeg" class="d-block w-100"
+                                        alt="Campeoja Jiu-jitsu">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/judo-dojo-tarraco/campeona-jiu-jitsu-2024.jpeg"
+                                        class="d-block w-100" alt="Campeona Jiu-jitsu 2024">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/judo-dojo-tarraco/campeona-infantil-judo-2024.jpeg"
+                                        class="d-block w-100" alt="Campeona Judo Infantil 2024">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -106,12 +175,12 @@
                                     <li class="list-group-item">Campus de Judo de Pre-temporada (Septiembre)</li>
                                     <li class="list-group-item">Ne Waza (Competición de tierra) (Noviembre)</li>
                                     <li class="list-group-item">Judo en Familia (Febrero)</li>
-                                    <li class="list-group-item">Tachi Waza (ompetición de pie) (Marzo)</li>
+                                    <li class="list-group-item">Tachi Waza (Competición de pie) (Marzo)</li>
                                     <li class="list-group-item">Examen de cinturón (Abril)</li>
                                     <li class="list-group-item">Colonias de Judo (Mayo)</li>
-                                    <li class="list-group-item">Exhibicionesde fin de curso (Mayo-Junio)</li>
+                                    <li class="list-group-item">Exhibiciones de fin de curso (Mayo-Junio)</li>
                                     <li class="list-group-item">Trofeo Judo Dojo Tarraco (Junio)</li>
-                                    <li class="list-group-item">Campus de Judo defin de curso (Junio y Julio)</li>
+                                    <li class="list-group-item">Campus de Judo de fin de curso (Junio y Julio)</li>
                                 </ul>
                             </div>
                         </div>
@@ -130,6 +199,109 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="py-5">
+            <div class="container medallero">
+                <!-- Medallero -->
+                <div class="row mt-5 justify-content-center" data-aos="fade-up" data-aos-duration="1500">
+                    <div class="col-12">
+                        <h3 class="text-center mb-4">Medallero</h3>
+                    </div>
+
+                    <!-- Logro 1 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-award-fill" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Lourdes del Moral</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Bronce - Campeonato de España Cadete</h6>
+                                <p class="card-text">Madrid 2016</p>
+                                <span class="badge bg-info">Judo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logro 2 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-award-fill" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Wendy de la Fuente</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Bronce - Campeonato de España Junior</h6>
+                                <p class="card-text">Madrid 2018</p>
+                                <span class="badge bg-info">Judo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logro 3 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-trophy" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Eric Castillo</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Campeón de España Infantil</h6>
+                                <p class="card-text">Madrid 2021</p>
+                                <span class="badge bg-info">Judo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logro 4 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-trophy" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Wendy de la Fuente</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Campeona de España Absoluto</h6>
+                                <p class="card-text">Madrid 2023</p>
+                                <span class="badge bg-warning text-dark">Jiu-Jitsu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logro 5 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-trophy" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Emma Castillo</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Campeona de España Infantil</h6>
+                                <p class="card-text">Pamplona 2024</p>
+                                <span class="badge bg-info">Judo</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logro 6 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-award" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Wendy de la Fuente</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Subcampeona de España Absoluto</h6>
+                                <p class="card-text">Las Palmas de Gran Canaria 2024</p>
+                                <span class="badge bg-warning text-dark">Jiu-Jitsu</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logro 7 -->
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <div class="card text-center shadow mb-4">
+                            <div class="card-body">
+                                <i class="bi bi-trophy" style="font-size: 2rem;"></i>
+                                <h5 class="card-title mt-2">Wendy de la Fuente</h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Campeona de España Absoluto</h6>
+                                <p class="card-text">Madrid 2024</p>
+                                <span class="badge bg-info">Judo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -154,13 +326,16 @@
                 </div>
                 <!-- Columna Navegación -->
                 <div class="col-md-4 mb-3">
-                    <h5>CLUBS</h5>
+                    <a href="index.html" class="text-light text-decoration-none">
+                        <h5>CLUBS</h5>
+                    </a>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="judo-dojo-tarraco.html" class="text-light text-decoration-none">DOJO
                                 JUDO
                                 TARRACO</a>
                         </li>
-                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">DOJO RODA</a>
+                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">DOJO RODA /
+                                JUDO RODA</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco.html"
                                 class="text-light text-decoration-none">PATINA DOJO

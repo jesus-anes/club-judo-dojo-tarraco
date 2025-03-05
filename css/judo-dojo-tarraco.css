@@ -20,7 +20,12 @@
     z-index: 2;
 }
 
-.about img {
-    width: 70%;
-    height: 70%;
+.carousel img {
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.medallero .card {
+    min-height: 280px;
 }
