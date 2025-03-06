@@ -3,14 +3,14 @@
     height: 60%;
 }
 
-.img-card {
+.card-img-top {
     width: 100%;
     height: 250px;
     object-fit: cover;
     transition: transform 0.3s;
 }
 
-.img-card:hover {
+.card-img-top:hover {
     transform: scale(1.05);
 }
 
@@ -85,12 +85,6 @@
     transform: scale(1.5);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     cursor: pointer;
-}
-
-.hover-effect {
-    transition: transform 0.4s, box-shadow 0.4s;
-    transform: scale(1.5);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Colores*/
