@@ -21,11 +21,15 @@
 }
 
 .carousel img {
-    height: 450px;
+    max-height: 400px;
     object-fit: cover;
     width: 100%;
 }
 
 .medallero .card {
     min-height: 280px;
+}
+
+.medallero span{
+    padding-left:5px;
 }
