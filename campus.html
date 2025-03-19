@@ -24,31 +24,6 @@
         }
         </script>
 
-    <style>
-        /* Encabezado con imagen de fondo */
-        .hero {
-            background: url('images/campus-verano/encabezado-campus.jpg') no-repeat center center;
-            background-size: cover;
-            height: 400px;
-            position: relative;
-            color: #fff;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 2;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -134,26 +109,26 @@
     <!-- Contenido -->
     <main>
         <!-- Hero Section -->
-        <!-- <section class="bg-primary text-white text-center py-5">
+        <section class="bg-primary text-white text-center py-5">
             <div class="container">
-                <h1 class="display-4 fw-bold" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <h1 class="display-4 fw-bold" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
                     Campus</h1>
-                <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">Prueba</p>
+                <p class="lead" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">Una experiencia
+                    educativa y deportiva para niños y jóvenes</p>
             </div>
-        </section> -->
+        </section>
         <!-- Encabezado Hero -->
-        <section class="hero d-flex align-items-center">
+        <!-- <section class="hero d-flex align-items-center">
             <div class="hero-overlay"></div>
             <div class="container text-center hero-content" data-aos="fade-down" data-aos-duration="1500">
                 <h1 class="display-4 fw-bold">Campus de Verano</h1>
                 <p class="lead">Una experiencia educativa y deportiva para niños y jóvenes</p>
             </div>
-        </section>
+        </section> -->
 
         <!-- Sección de Introducción -->
-        <!-- Sección de Introducción -->
         <section class="py-5">
-            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
                 <div class="row align-items-center">
                     <div class="col-md-7">
                         <h2 class="fw-bold mb-3">¿Por qué Campus de Verano?</h2>
@@ -184,14 +159,14 @@
         </section>
 
         <!-- Sección: Mini-Campus (Niños de 3 a 5 años) -->
-        <section class="py-5 bg-light">
-            <div class="container" data-aos="fade-up" data-aos-duration="1500">
+        <section class="py-5 bg-light mini-campus">
+            <div class="container">
                 <h2 class="text-center mb-4 fw-bold">Mini-Campus (3 a 5 años)</h2>
                 <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="images/campus-verano/minicampus.jpg" class="img-fluid rounded mb-4" alt="Mini-Campus">
+                    <div class="col-12 col-lg-7 " data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                        <img src="images/campus/mini-campus.jpg" class="img-fluid rounded" alt="Mini-Campus">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12 col-lg-5 " data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
                         <h4 class="fw-bold">Actividades</h4>
                         <ul class="list-group activity-list">
                             <li class="list-group-item">Actividades pre deportivas</li>
@@ -209,15 +184,15 @@
         </section>
 
         <!-- Sección: Campus Lúdico-Deportivo (Edades de primaria) -->
-        <section class="py-5">
+        <section class="py-5 ludico-deportivo">
             <div class="container" data-aos="fade-up" data-aos-duration="1500">
                 <h2 class="text-center mb-4 fw-bold">Campus Lúdico-Deportivo (Primaria)</h2>
                 <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2">
-                        <img src="images/campus-verano/campus-ludico.jpg" class="img-fluid rounded mb-4"
+                    <div class="col-12 col-lg-7 order-lg-2 order-md-1">
+                        <img src="images/campus/campus-ludico.jpg" class="img-fluid rounded"
                             alt="Campus Lúdico-Deportivo">
                     </div>
-                    <div class="col-md-6 order-md-1">
+                    <div class="col-12 col-lg-5 order-lg-1 order-md-2">
                         <h4 class="fw-bold">Actividades</h4>
                         <ul class="list-group activity-list">
                             <li class="list-group-item">Iniciación deportiva y expresión corporal y artística</li>
@@ -231,7 +206,7 @@
                         </ul>
                     </div>
                 </div>
-                <p class="mt-3">Cada semana se proponen actividades variadas para que los niños encuentren
+                <p class="mt-3 text-center">Cada semana se proponen actividades variadas para que los niños encuentren
                     novedades significativas y disfruten de una experiencia única.</p>
             </div>
         </section>
@@ -239,10 +214,11 @@
         <!-- Llamado a la Acción -->
         <section class="py-5 bg-light">
             <div class="container text-center" data-aos="zoom-in" data-aos-duration="1500">
-                <h3 class="fw-bold mb-3">¿Quieres más información?</h3>
-                <p class="lead">Contacta con nosotros y descubre cómo inscribir a tu hijo en nuestro Campus de Verano.
+                <h3 class="fw-bold mb-3">¿Quieres saber más?</h3>
+                <p class="lead">Si quieres recibir el proyecto completo y/o más información contacta con <a
+                        href="mailto:lara@dojotarraco.es" class="text-decoration-none">lara@dojotarraco.es</a> o <a
+                        href="mailto:javier@dojotarraco.es" class="text-decoration-none">javier@dojotarraco.es.</a>
                 </p>
-                <a href="mailto:lara@dojotarraco.es" class="btn btn-primary btn-lg">Contáctanos</a>
             </div>
         </section>
 
