@@ -151,6 +151,10 @@
     background-color: #FFDEAD !important;
 }
 
+.hover-effect {
+    transform: scale(1.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
