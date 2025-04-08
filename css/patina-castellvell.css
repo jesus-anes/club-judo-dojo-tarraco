@@ -1,10 +1,20 @@
 .hero img {
-    width: 70%;
-    height: 70%;
+    width: 40%;
+    height: 40%;
 }
 
-.about img {
+.patinaje-artistico img {
     width: 100%;
     height: 350px;
     object-fit: cover;
+}
+
+.patinaje-linea img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.por-que .card {
+    min-height: 200px;
 }

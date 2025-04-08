@@ -34,16 +34,16 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Botó per a dispositius mòbils -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Commuta la navegació">
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Canviar la navegació">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <!-- Esquerra -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-3 ms-auto">
                         <!-- Club Dojo Tarraco amb menú desplegable -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-center" href="#"
@@ -57,12 +57,11 @@
                                 <li><a class="dropdown-item" href="patina-dojo-tarraco-cat.html">Patinatge</a></li>
                             </ul>
                         </li>
-                        <!-- Club Dojo Roda de Barà -->
+                        <!-- Club Dojo Roda/Judo Roda -->
                         <li class="nav-item">
-                            <a class="nav-link fw-bold d-flex align-items-center text-center"
-                                href="dojo-roda-bara-cat.html">
-                                <img src="images/icons/logodojoroda.png" alt="Roda de Barà" width="30" class="me-2">
-                                <span>Club Dojo/Judo Roda de Barà</span>
+                            <a class="nav-link fw-bold d-flex align-items-center text-center" href="dojo-roda-cat.html">
+                                <img src="images/icons/logodojoroda.png" alt="Dojo Roda" width="30" class="me-2">
+                                <span>Club Dojo/Judo Roda</span>
                             </a>
                         </li>
                         <!-- Club Patina Castellvell -->
@@ -75,8 +74,8 @@
                         </li>
                     </ul>
 
-                    <!-- Part Dreta -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Dreta -->
+                    <ul class="navbar-nav ms-3 me-auto">
                         <!-- Inici -->
                         <li class="nav-item">
                             <a class="nav-link" href="index-cat.html">Inici</a>
@@ -87,19 +86,18 @@
                         </li>
                         <!-- Complementàries amb menú desplegable -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="complementariasDropdown"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="complementariasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 Complementàries
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
                                 aria-labelledby="complementariasDropdown">
                                 <li><a class="dropdown-item" href="colonias-cat.html">Colònies</a></li>
                                 <li><a class="dropdown-item active" href="campus-cat.html">Campus</a></li>
-                                <li><a class="dropdown-item" href="jornada-intensiva-cat.html">Jornada Intensiva</a>
-                                </li>
+                                <li><a class="dropdown-item" href="jornada-intensiva-cat.html">Jornada Intensiva</a></li>
                             </ul>
                         </li>
-                        <!-- Contacte -->
+                        <!-- Contactes -->
                         <li class="nav-item">
                             <a class="nav-link" href="contactos-cat.html">Contactes</a>
                         </li>
@@ -109,18 +107,14 @@
                         </li>
                         <!-- Idioma -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="images/icons/flag-catalunya.png" alt="Catalunya" width="20">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown"
+                                role="button" data-bs-toggle="dropdown">
+                                <span class="placeholder-icon"></span>
+                                <span>Idioma</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                                aria-labelledby="complementariasDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="campus.html">
-                                        <img src="images/icons/flag-espana.png" alt="España" width="20" class="me-2">
-                                        Español
-                                    </a>
-                                </li>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="campus.html">Español</a></li>
+                                <li><a class="dropdown-item active" href="campus-cat.html">Català</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -188,7 +182,6 @@
                             <li class="list-group-item">Expressió corporal i jocs tradicionals</li>
                             <li class="list-group-item">Jocs aquàtics i de taula</li>
                             <li class="list-group-item">Excursions i sortides a la platja</li>
-                            <li class="list-group-item">Acampada i activitats al hort</li>
                             <li class="list-group-item">Tallers i manualitats</li>
                         </ul>
                     </div>
@@ -199,7 +192,7 @@
         <!-- Secció: Campus Lúdico-Esportiu (Edats de primària) -->
         <section class="py-5 ludico-deportivo">
             <div class="container" data-aos="fade-up" data-aos-duration="1500">
-                <h2 class="text-center mb-4 fw-bold">Campus Lúdico-Esportiu (Primària)</h2>
+                <h2 class="text-center mb-4 fw-bold">Campus Esportiu (Primària)</h2>
                 <div class="row align-items-center">
                     <div class="col-12 col-lg-7 order-lg-2 order-md-1">
                         <img src="images/campus/campus-ludico.jpg" class="img-fluid rounded"
@@ -215,7 +208,6 @@
                             <li class="list-group-item">Jocs aquàtics, fins i tot a la piscina</li>
                             <li class="list-group-item">Tallers, manualitats i excursions a peu i en bicicleta</li>
                             <li class="list-group-item">Jocs d'estratègia i activitats de grup</li>
-                            <li class="list-group-item">Hort</li>
                         </ul>
                     </div>
                 </div>
@@ -223,6 +215,7 @@
                     significatives i gaudeixin d'una experiència única.</p>
             </div>
         </section>
+        
         <!-- Crida a l'Acció -->
         <section class="py-5 bg-light">
             <div class="container text-center" data-aos="zoom-in" data-aos-duration="1500">
@@ -263,11 +256,8 @@
                                 class="text-light text-decoration-none">Dojo
                                 Judo Tarraco</a>
                         </li>
-                        <li class="mb-2"><a href="ju-jitsu-dojo-tarraco-cat.html"
-                                class="text-light text-decoration-none">Ju-Jitsu Judo Tarraco</a>
-                        </li>
-                        <li class="mb-2"><a href="dojo-roda-bara-cat.html" class="text-light text-decoration-none">
-                                Dojo/Judo Roda de Barà</a>
+                        <li class="mb-2"><a href="dojo-roda-cat.html" class="text-light text-decoration-none">
+                                Dojo/Judo Roda</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco-cat.html"
                                 class="text-light text-decoration-none">Patina Dojo Tarraco</a>
@@ -317,7 +307,7 @@
             </div>
         </div>
         <div class="bg-secondary text-center py-2">
-            <small>&copy; 2025 Club Dojo Judo Tarraco.</small>
+            <small>&copy; 2025 Club Judo Dojo Tarraco.</small>
         </div>
     </footer>
 

@@ -6,3 +6,7 @@
 .list-group-item {
     background-color: #f0eeee;
 }
+
+.por-que .card{
+    min-height: 200px;
+}

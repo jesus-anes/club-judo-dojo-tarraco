@@ -1,5 +1,5 @@
 .hero-tatami {
-    background: url("../images/dojo-roda-bara/tatami-dojo-roda-bara.jpeg") no-repeat center center;
+    background: url("../images/dojo-roda/tatami-dojo-roda.jpeg") no-repeat center center;
     background-size: cover;
     height: 600px;
     position: relative;
@@ -20,6 +20,6 @@
     z-index: 2;
 }
 
-.card{
+.por-que .card{
     min-height: 200px;
 }

@@ -44,16 +44,16 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Botó per a dispositius mòbils -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Canviar la navegació">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <!-- Esquerra -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-3 ms-auto">
                         <!-- Club Dojo Tarraco amb menú desplegable -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-center active"
@@ -69,12 +69,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- Club Dojo Roda de Bara / Judo Roda de Barà -->
+                        <!-- Club Dojo Roda/Judo Roda -->
                         <li class="nav-item">
-                            <a class="nav-link fw-bold d-flex align-items-center text-center"
-                                href="dojo-roda-bara-cat.html">
-                                <img src="images/icons/logodojoroda.png" alt="Roda de Barà" width="30" class="me-2">
-                                <span>Club Dojo/Judo Roda de Barà</span>
+                            <a class="nav-link fw-bold d-flex align-items-center text-center" href="dojo-roda-cat.html">
+                                <img src="images/icons/logodojoroda.png" alt="Dojo Roda" width="30" class="me-2">
+                                <span>Club Dojo/Judo Roda</span>
                             </a>
                         </li>
                         <!-- Club Patina Castellvell -->
@@ -87,8 +86,8 @@
                         </li>
                     </ul>
 
-                    <!-- Part dreta -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Dreta -->
+                    <ul class="navbar-nav ms-3 me-auto">
                         <!-- Inici -->
                         <li class="nav-item">
                             <a class="nav-link" href="index-cat.html">Inici</a>
@@ -109,31 +108,26 @@
                                 <li><a class="dropdown-item" href="campus-cat.html">Campus</a></li>
                                 <li><a class="dropdown-item" href="jornada-intensiva-cat.html">Jornada Intensiva</a>
                                 </li>
-
                             </ul>
                         </li>
                         <!-- Contactes -->
                         <li class="nav-item">
                             <a class="nav-link" href="contactos-cat.html">Contactes</a>
                         </li>
-                        <!-- El nostre Equip -->
+                        <!-- El Nostre Equip -->
                         <li class="nav-item">
                             <a class="nav-link" href="equipo-motor-cat.html">Equip Motor</a>
                         </li>
                         <!-- Idioma -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="images/icons/flag-catalunya.png" alt="Catalunya" width="20">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown"
+                                role="button" data-bs-toggle="dropdown">
+                                <span class="placeholder-icon"></span>
+                                <span>Idioma</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                                aria-labelledby="complementariasDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="patina-dojo-tarraco.html">
-                                        <img src="images/icons/flag-espana.png" alt="España" width="20" class="me-2">
-                                        Español
-                                    </a>
-                                </li>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Español</a></li>
+                                <li><a class="dropdown-item active" href="patina-dojo-tarraco-cat.html">Català</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -152,7 +146,7 @@
                         <h1 class="font-weight-light" data-aos="fade-right" data-aos-duration="2000"
                             data-aos-delay="200">Club Patina Dojo Tarraco</h1>
                         <p class="lead" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
-                            Club fundat l'any 2004, que actua com a secció del Club Judo Dojo Tarraco des de 2018.
+                            QUALITAT, EDUCACIÓ, FORMACIÓ I RENDIMENT
                         </p>
                     </div>
                     <div class="col-md-6">
@@ -166,20 +160,16 @@
         <!-- Enunciat intermedi -->
         <section class="py-5">
             <div class="container">
-                <div class="card text-white bg-primary py-4 text-center" data-aos="zoom-in" data-aos-duration="1500">
+                <div class="card text-white bg-primary py-1 text-center" data-aos="zoom-in" data-aos-duration="1500">
                     <div class="card-body">
-                        <h5 class="text-white m-0">Uneix-te al nostre club i forma part d'una gran família de
-                            patinadors!
-                        </h5>
+                        <h2 class="fw-normal">Qui som
+                        </h2>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Secció d'Activitats -->
-        <section class="py-5">
-            <div class="container">
+            <div class="container py-5">
                 <!-- Secció Patinatge Artístic -->
-                <div class="row align-items-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="row mb-4 align-items-center" data-aos="fade-up" data-aos-duration="1000">
                     <!-- Imatge -->
                     <div class="col-lg-5 order-lg-2" data-aos="fade-left" data-aos-duration="2000">
                         <img class="img-fluid rounded mb-4" src="images/patina-dojo-tarraco/patinaje-artistico.jpg"
@@ -199,35 +189,10 @@
                             es
                             complementen amb sessions específiques de flexibilitat i acondicionament físic.
                         </p>
-                        <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#horariosArtistico" aria-expanded="false" aria-controls="horariosArtistico"
-                            data-aos="fade-up" data-aos-duration="1000">
-                            Horaris
-                        </button>
-                        <!-- Horaris -->
-                        <div class="collapse mt-3" id="horariosArtistico">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex align-items-center">
-                                    <span class="badge bg-primary rounded-pill me-3"><i
-                                            class="bi bi-clock-fill"></i></span>
-                                    <strong>Dilluns i dimecres: </strong> 18:30 - 20:30 h
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <span class="badge bg-primary rounded-pill me-3"><i
-                                            class="bi bi-clock-fill"></i></span>
-                                    <strong>Dimarts i dijous: </strong> 18:15 - 21:15 h
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <span class="badge bg-primary rounded-pill me-3"><i
-                                            class="bi bi-clock-fill"></i></span>
-                                    <strong>Dissabte: </strong> 8:45 - 11:45 h
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <!-- Secció Patinatge en Línia/Velocitat -->
-                <div class="row py-4 align-items-center" data-aos="fade-down" data-aos-duration="1000">
+                <div class="row align-items-center" data-aos="fade-down" data-aos-duration="1000">
                     <!-- Imatge -->
                     <div class="col-lg-7" data-aos="fade-right" data-aos-duration="2000">
                         <img class="img-fluid rounded mb-4" src="images/patina-dojo-tarraco/patinaje-en-linea.jpg"
@@ -245,25 +210,47 @@
                             i
                             també s'ofereix un grup de patinatge lúdic.
                         </p>
-                        <button class="btn btn-success" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#horariosLinea" aria-expanded="false" aria-controls="horariosLinea"
-                            data-aos="fade-down" data-aos-duration="1000">
-                            Horaris
-                        </button>
-                        <!-- Horaris -->
-                        <div class="collapse mt-3" id="horariosLinea">
-                            <ul class="list-group">
-                                <li class="list-group-item d-flex align-items-center">
-                                    <span class="badge bg-primary rounded-pill me-3"><i
-                                            class="bi bi-clock-fill"></i></span>
-                                    <strong>Dimarts i dijous: </strong> 18:30 - 20:30 h
-                                </li>
-                                <li class="list-group-item d-flex align-items-center">
-                                    <span class="badge bg-primary rounded-pill me-3"><i
-                                            class="bi bi-clock-fill"></i></span>
-                                    <strong>Dissabte: </strong> 11:00 - 13:00 h
-                                </li>
-                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secció "Per què CLUB PATINA DOJO TARRACO?" -->
+        <section class="bg-light py-5 por-que">
+            <div class="container">
+                <h2 class="text-center mb-4 fw-normal">Per què CLUB PATINA DOJO TARRACO?</h2>
+                <div class="row">
+                    <!-- Formació Integral -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm mb-4" data-aos="fade-up" data-aos-duration="2000"
+                            data-aos-delay="500">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Formació Integral</h5>
+                                <p class="card-text lead">El nostre enfocament va més enllà d'ensenyar tècniques de
+                                    judo. Ens
+                                    centrem en el desenvolupament físic, emocional i social de cada alumne.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ambient Positiu -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Ambient Positiu</h5>
+                                <p class="card-text lead">Creem un entorn de respecte i cooperació on els nens
+                                    aprenen a treballar en equip i desenvolupar habilitats per a tota la vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Equip de Professionals -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Equip de Professionals</h5>
+                                <p class="card-text lead">Comptem amb entrenadors amb àmplia experiència,
+                                    compromesos a
+                                    guiar cada alumne segons el seu nivell i ritme d'aprenentatge.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -271,7 +258,7 @@
         </section>
 
         <!-- Informació complementària -->
-        <section class="bg-light py-4">
+        <section class="py-4">
             <div class="container">
                 <p class="text-center lead">
                     Comptem amb tècnics formats i titulats en patinatge artístic i de velocitat. Al club
@@ -310,11 +297,8 @@
                                     class="text-light text-decoration-none">Dojo
                                     Judo Tarraco</a>
                             </li>
-                            <li class="mb-2"><a href="ju-jitsu-dojo-tarraco-cat.html"
-                                    class="text-light text-decoration-none">Ju-Jitsu Judo Tarraco</a>
-                            </li>
-                            <li class="mb-2"><a href="dojo-roda-bara-cat.html" class="text-light text-decoration-none">
-                                    Dojo/Judo Roda de Barà</a>
+                            <li class="mb-2"><a href="dojo-roda-cat.html" class="text-light text-decoration-none">
+                                    Dojo/Judo Roda</a>
                             </li>
                             <li class="mb-2"><a href="patina-dojo-tarraco-cat.html"
                                     class="text-light text-decoration-none">Patina Dojo Tarraco</a>
@@ -365,7 +349,7 @@
                 </div>
             </div>
             <div class="bg-secondary text-center py-2">
-                <small>&copy; 2025 Club Dojo Judo Tarraco.</small>
+                <small>&copy; 2025 Club Judo Dojo Tarraco.</small>
             </div>
         </footer>
 

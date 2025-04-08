@@ -42,7 +42,7 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Botón para dispositivos móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,7 +51,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <!-- Izquierda -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav  me-3 ms-auto">
                         <!-- Club Dojo Tarraco con menú desplegable -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-center" href="#"
@@ -65,12 +65,11 @@
                                 <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patinaje</a></li>
                             </ul>
                         </li>
-                        <!-- Club Dojo Roda de Bara / Judo Roda de Barà -->
+                        <!-- Club Dojo Roda/Judo Roda -->
                         <li class="nav-item">
-                            <a class="nav-link fw-bold d-flex align-items-center text-center"
-                                href="dojo-roda-bara.html">
-                                <img src="images/icons/logodojoroda.png" alt="Roda de Barà" width="30" class="me-2">
-                                <span>Club Dojo/Judo Roda de Barà</span>
+                            <a class="nav-link fw-bold d-flex align-items-center text-center" href="dojo-roda.html">
+                                <img src="images/icons/logodojoroda.png" alt="Dojo Roda" width="30" class="me-2">
+                                <span>Club Dojo/Judo Roda</span>
                             </a>
                         </li>
                         <!-- Club Patina Castellvell -->
@@ -83,9 +82,8 @@
                         </li>
                     </ul>
 
-
-                    <!-- Parte Derecha -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Derecha -->
+                    <ul class="navbar-nav ms-3 me-auto">
                         <!-- Inicio -->
                         <li class="nav-item">
                             <a class="nav-link active" href="index.html">Inicio</a>
@@ -105,6 +103,7 @@
                                 <li><a class="dropdown-item" href="colonias.html">Colonias</a></li>
                                 <li><a class="dropdown-item" href="campus.html">Campus</a></li>
                                 <li><a class="dropdown-item" href="jornada-intensiva.html">Jornada Intensiva</a></li>
+
                             </ul>
                         </li>
                         <!-- Contactos -->
@@ -117,19 +116,14 @@
                         </li>
                         <!-- Idioma -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="images/icons/flag-espana.png" alt="España" width="20">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown"
+                                role="button" data-bs-toggle="dropdown">
+                                <span class="placeholder-icon"></span>
+                                <span>Idioma</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                                aria-labelledby="complementariasDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="index-cat.html">
-                                        <img src="images/icons/flag-catalunya.png" alt="Catalunya" width="20"
-                                            class="me-2">
-                                        Català
-                                    </a>
-                                </li>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="index.html">Español</a></li>
+                                <li><a class="dropdown-item" href="index-cat.html">Català</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -138,7 +132,6 @@
         </nav>
     </header>
 
-
     <!-- Contenido -->
     <main>
         <section class="bg-primary text-white text-center py-5">
@@ -146,8 +139,8 @@
                 <h1 class="display-4 fw-bold" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                     Descubre Nuestro Proyecto
                 </h1>
-                <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">Formando en
-                    educación ,valores y deporte</p>
+                <p class="lead" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">CALIDAD, EDUCACIÓN,
+                    FORMACIÓN Y RENDIMIENTO</p>
             </div>
         </section>
 
@@ -159,9 +152,11 @@
                         <h2 class="fw-normal" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">Quiénes
                             somos</h2>
                         <p class="lead" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="500">
-                            Dojo Tarraco es un conjunto de clubes dedicados a la formación deportiva y educativa,
-                            abarcando Judo, Ju-jitsu, Patinaje en línea, Patinaje artístico y más. Con más de 25 años
-                            de experiencia, ofrecemos actividades para todas las edades y niveles.
+                            Dojo Tarraco es el motor de un proyecto en el que la formación, educación y el rendimiento
+                            deportivo son la base del mismo, partiendo con el Judo y extendiéndose a las diferentes
+                            modalidades de patinaje y al Ju-jitsu. La calidad en las propuestas es nuestra máxima, ello
+                            nos ha llevado a crecer en estos más de 25 años de experiencia, ofreciendo actividades para
+                            todas las edades y niveles.
                         </p>
                         <!-- Botón para redirigir a Nuestro Equipo -->
                         <a href="equipo-motor.html" class="btn btn-primary mt-3" data-aos="zoom-in"
@@ -241,12 +236,12 @@
                     <!-- Club Judo Roda de Barà -->
                     <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000"
                         data-aos-delay="400">
-                        <a href="dojo-roda-bara.html" class="text-decoration-none text-reset">
+                        <a href="dojo-roda.html" class="text-decoration-none text-reset">
                             <div class="card shadow h-100">
-                                <img src="images/dojo-roda-bara/tatami-dojo-roda-bara.jpeg" class="card-img-top"
-                                    alt="Club Judo Roda de Barà">
+                                <img src="images/dojo-roda/tatami-dojo-roda.jpeg" class="card-img-top"
+                                    alt="Club Judo Roda">
                                 <div class="card-body d-flex flex-column text-center">
-                                    <h5 class="card-title fw-bold">Club Dojo Roda de Barà</h5>
+                                    <h5 class="card-title fw-bold">Club Dojo Roda</h5>
                                     <p class="card-text lead">
                                         Expandiendo los valores del judo en la región.
                                     </p>
@@ -327,17 +322,14 @@
                 <!-- Columna Navegación -->
                 <div class="col-md-4 mb-3">
                     <a href="index.html" class="text-light text-decoration-none">
-                        <h5>CLUBS</h5>
+                        <h5>CLUBES</h5>
                     </a>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="judo-dojo-tarraco.html" class="text-light text-decoration-none">Dojo
                                 Judo Tarraco</a>
                         </li>
-                        <li class="mb-2"><a href="ju-jitsu-dojo-tarraco.html"
-                                class="text-light text-decoration-none">Ju-Jitsu Judo Tarraco</a>
-                        </li>
-                        <li class="mb-2"><a href="dojo-roda-bara.html" class="text-light text-decoration-none">
-                                Dojo/Judo Roda de Barà</a>
+                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">
+                                Dojo/Judo Roda</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco.html"
                                 class="text-light text-decoration-none">Patina Dojo Tarraco</a>
@@ -375,7 +367,7 @@
             </div>
         </div>
         <div class="bg-secondary text-center py-2">
-            <small>&copy; 2025 Club Dojo Judo Tarraco.</small>
+            <small>&copy; 2025 Club Judo Dojo Tarraco.</small>
         </div>
     </footer>
 

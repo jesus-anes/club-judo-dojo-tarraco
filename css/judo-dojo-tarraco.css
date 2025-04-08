@@ -1,5 +1,5 @@
 .hero {
-    background: url('../images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.JPG') no-repeat center center;
+    background: url('../images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.jpg') no-repeat center center;
     background-size: cover;
     height: 600px;
     position: relative;
@@ -32,4 +32,8 @@
 
 .medallero span {
     padding-left: 5px;
+}
+
+.por-que .card{
+    min-height: 200px;
 }

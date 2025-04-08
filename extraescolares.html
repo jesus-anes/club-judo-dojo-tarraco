@@ -34,7 +34,7 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Botón para dispositivos móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,7 +43,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <!-- Izquierda -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav  me-3 ms-auto">
                         <!-- Club Dojo Tarraco con menú desplegable -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-center" href="#"
@@ -57,12 +57,12 @@
                                 <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patinaje</a></li>
                             </ul>
                         </li>
-                        <!-- Club Dojo Roda de Bara / Judo Roda de Barà -->
+                        <!-- Club Dojo Roda/Judo Roda -->
                         <li class="nav-item">
                             <a class="nav-link fw-bold d-flex align-items-center text-center"
-                                href="dojo-roda-bara.html">
-                                <img src="images/icons/logodojoroda.png" alt="Roda de Barà" width="30" class="me-2">
-                                <span>Club Dojo/Judo Roda de Barà</span>
+                                href="dojo-roda.html">
+                                <img src="images/icons/logodojoroda.png" alt="Dojo Roda" width="30" class="me-2">
+                                <span>Club Dojo/Judo Roda</span>
                             </a>
                         </li>
                         <!-- Club Patina Castellvell -->
@@ -75,8 +75,8 @@
                         </li>
                     </ul>
 
-                    <!-- Parte Derecha -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Derecha -->
+                    <ul class="navbar-nav ms-3 me-auto">
                         <!-- Inicio -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
@@ -109,19 +109,14 @@
                         </li>
                         <!-- Idioma -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="images/icons/flag-espana.png" alt="España" width="20">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown"
+                                role="button" data-bs-toggle="dropdown">
+                                <span class="placeholder-icon"></span>
+                                <span>Idioma</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                                aria-labelledby="complementariasDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="extraescolares-cat.html">
-                                        <img src="images/icons/flag-catalunya.png" alt="Catalunya" width="20"
-                                            class="me-2">
-                                        Català
-                                    </a>
-                                </li>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="extraescolares.html">Español</a></li>
+                                <li><a class="dropdown-item" href="extraescolares-cat.html">Català</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -235,30 +230,9 @@
                         </div>
                     </div>
 
-                    <!-- Actividades No Deportivas -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="400">
-                        <div class="card h-100 shadow">
-                            <img class="card-img-top rounded-top img-card" src="images/extraescolares/no-deportivas.jpg"
-                                alt="Actividades no deportivas">
-                            <div class="card-body">
-                                <h5 class="card-title">No Deportivas</h5>
-                                <p class="card-text text-muted">Actividades recreativas y educativas como talleres y
-                                    juegos de mesa.</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Psico-Desarrollo Motriz (P3 y P4)</li>
-                                    <li class="list-group-item">Juegos de Mesa (Primaria)</li>
-                                    <li class="list-group-item">Acogida</li>
-                                    <li class="list-group-item">Talleres de Emociones (P4-2º Primaria)</li>
-                                    <li class="list-group-item">Talleres de Deberes (Primaria)</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Actividades para Adultos -->
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="600">
+                        data-aos-delay="400">
                         <div class="card h-100 shadow">
                             <img class="card-img-top rounded-top img-card" src="images/extraescolares/para-adultos.jpg"
                                 alt="Actividades para adultos">
@@ -278,7 +252,7 @@
 
                     <!-- Actividades Complementarias -->
                     <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="400">
+                        data-aos-delay="600">
                         <div class="card h-100 shadow">
                             <img class="card-img-top rounded-top img-card"
                                 src="images/extraescolares/complementarias.jpg" alt="Actividades complementarias">
@@ -287,201 +261,30 @@
                                 <p class="card-text text-muted">Diseñadas para fomentar la cohesión y el trabajo en
                                     equipo.</p>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Colonias</li>
+                                    <li class="list-group-item">Colonias Deportivas</li>
                                     <li class="list-group-item">Campus Deportivos</li>
                                     <li class="list-group-item">Jornada Intensiva</li>
+                                    <li class="list-group-item">Gincana Deportiva</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Puntuales -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1500"
-                        data-aos-delay="600">
-                        <div class="card h-100 shadow">
-                            <img class="card-img-top rounded-top img-card" src="images/extraescolares/puntuales.jpg"
-                                alt="Actividades puntuales">
-                            <div class="card-body">
-                                <h5 class="card-title">Puntuales</h5>
-                                <p class="card-text text-muted">Eventos organizados de manera puntual.</p>
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item">Gymcanas Temáticas</li>
-                                    <li class="list-group-item">Organización de Competiciones</li>
-                                    <li class="list-group-item">Organización de Encuentros</li>
-                                    <li class="list-group-item">Cursos y Seminarios Monográficos</li>
-                                    <li class="list-group-item">Jornadas Multideportivas en familia</li>
-                                    <li class="list-group-item">Actividades por los días de libre elección</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Calendario Actividades-->
-        <section class="py-5">
-            <div class="container">
-                <div class="text-center mb-4">
-                    <button class="btn btn-success btn-lg" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#calendarCollapse" aria-expanded="false" aria-controls="calendarCollapse"
-                        data-aos="fade-left" data-aos-duration="1500">
-                        Calendario de Actividades
-                    </button>
-
-                </div>
-                <div class="collapse" id="calendarCollapse">
-                    <div class="card card-body">
-                        <div class="container calendar-container">
-                            <table class="table table-bordered text-center align-middle calendar-table">
-                                <tr class="table-dark">
-                                    <th>Enero</th>
-                                    <th>Febrero</th>
-                                    <th>Marzo</th>
-                                    <th>Abril</th>
-                                    <th>Mayo</th>
-                                    <th>Junio</th>
-                                </tr>
-                                <tbody>
-                                    <tr>
-                                        <td class="color-14" rowspan="5"></td>
-                                        <td class="color-1" rowspan="1"><strong>Judo en Familia</strong></td>
-                                        <td class="color-2" rowspan="1">
-                                            <strong>Tachi Waza <br>(Competición de pie)</strong>
-                                        </td>
-                                        <td class="color-3"><strong>Examen de cinturón</strong></td>
-                                        <td class="color-4"><strong>Colonias de Judo</strong></td>
-                                        <td class="color-5"><strong>Trofeo de Judo Dojo Tarraco</strong></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="color-6"><strong>Ruta de Carnaval</strong></td>
-                                        <td class="color-7">
-                                            <strong>Competición de patinaje <br>en línea</strong>
-                                        </td>
-                                        <td class="color-8"><strong>Competición de patinaje artístico</strong></td>
-                                        <td class="color-9" colspan="2">
-                                            <strong>Exhibiciones de fin de curso (Judo)</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="color-14" rowspan="3"></td>
-                                        <td class="color-14" rowspan="3"></td>
-                                        <td class="color-14" rowspan="3"></td>
-                                        <td class="color-10"><strong>Colonias de Patinaje</strong></td>
-                                        <td class="color-11 campusJudo">
-                                            <strong>Campus de Judo de fin de curso</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="color-1" colspan="2">
-                                            <strong>Exhibiciones de fin de curso (Patinaje)</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="color-14"></td>
-                                        <td class="color-12 campusPatinaje">
-                                            <strong>Campus de patinaje de fin de curso</strong>
-                                        </td>
-                                    </tr>
-                                    <tr class="table-dark">
-                                        <th>Julio</th>
-                                        <th>Agosto</th>
-                                        <th>Septiembre</th>
-                                        <th>Octubre</th>
-                                        <th>Noviembre</th>
-                                        <th>Diciembre</th>
-                                    </tr>
-                                    <tr>
-                                        <td class="color-11 campusJudo">
-                                            <strong>Campus de Judo de fin de curso</strong>
-                                        </td>
-                                        <td class="color-14" rowspan="2"></td>
-                                        <td class="color-15">
-                                            <strong>Campus de Judo de Pre-temporada</strong>
-                                        </td>
-                                        <td class="color-14" rowspan="2"></td>
-                                        <td class="color-16" rowspan="2">
-                                            <strong>Ne Waza <br>(Competición de tierra)</strong>
-                                        </td>
-                                        <td class="color-17" rowspan="2">
-                                            <strong>Festival de Navidad <br>Patinaje Artístico</strong>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="color-12 campusPatinaje">
-                                            <strong>Campus de patinaje de fin de curso</strong>
-                                        </td>
-                                        <td class="color-3">
-                                            <strong>Campus de patinaje de Pre-temporada</strong>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Precios -->
-        <section id="pricing" class="py-5 bg-light">
-            <div class="container">
-                <h2 class="mb-4 text-center">Precios y Modalidades</h2>
-                <p class="text-center">Nuestros precios incluyen la planificación, coordinación y todos los servicios
-                    necesarios para el correcto desarrollo de las actividades.</p>
-                <div class="row">
-                    <!-- Tarifa 1 sesión -->
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header text-center">
-                                <h4 class="my-0">1 Sesión Semanal</h4>
-                            </div>
-                            <div class="card-body text-center">
-                                <h1 class="card-title pricing-card-title">23€<small class="text-muted">/mes</small></h1>
-                                <p class="mb-0">½ mes: 16€</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tarifa 2 sesiones -->
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header text-center">
-                                <h4 class="my-0">2 Sesiones Semanales</h4>
-                            </div>
-                            <div class="card-body text-center">
-                                <h1 class="card-title pricing-card-title">33€<small class="text-muted">/mes</small></h1>
-                                <p class="mb-0">½ mes: 22€</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Tarifa 3 sesiones -->
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-                        <div class="card mb-4 shadow-sm">
-                            <div class="card-header text-center">
-                                <h4 class="my-0">3 Sesiones Semanales</h4>
-                            </div>
-                            <div class="card-body text-center">
-                                <h1 class="card-title pricing-card-title">41€<small class="text-muted">/mes</small></h1>
-                                <p class="mb-0">½ mes: 29€</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <small>Modalidad "Cole + Club": +21€ adicionales (sin límite de sesiones)</small>
-                </div>
-            </div>
-        </section>
-
-        <!-- Descarga section -->
-        <section class="py-5 text-center">
-            <div class="container">
-                <h2 class="mb-4">¿Quieres saber más?</h2>
-                <p>Descarga nuestro dossier para obtener toda la información.
+        <!-- Llamado a la Acción -->
+        <section class="py-5 bg-light">
+            <div class="container text-center" data-aos="zoom-in" data-aos-duration="1500">
+                <h3 class="fw-bold mb-3">¿Quieres saber más?</h3>
+                <p class="lead">Si quieres recibir el proyecto completo y/o más información contacta con <a
+                        href="mailto:lara@dojotarraco.es" class="text-decoration-none">lara@dojotarraco.es</a> o <a
+                        href="mailto:javier@dojotarraco.es" class="text-decoration-none">javier@dojotarraco.es.</a>
                 </p>
-                <button class="btn btn-primary btn-lg" id="btnDescargar">Descargar</button>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
@@ -504,17 +307,14 @@
                 <!-- Columna Navegación -->
                 <div class="col-md-4 mb-3">
                     <a href="index.html" class="text-light text-decoration-none">
-                        <h5>CLUBS</h5>
+                        <h5>CLUBES</h5>
                     </a>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="judo-dojo-tarraco.html" class="text-light text-decoration-none">Dojo
                                 Judo Tarraco</a>
                         </li>
-                        <li class="mb-2"><a href="ju-jitsu-dojo-tarraco.html"
-                                class="text-light text-decoration-none">Ju-Jitsu Judo Tarraco</a>
-                        </li>
-                        <li class="mb-2"><a href="dojo-roda-bara.html" class="text-light text-decoration-none">
-                                Dojo/Judo Roda de Barà</a>
+                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">
+                                Dojo/Judo Roda</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco.html"
                                 class="text-light text-decoration-none">Patina Dojo Tarraco</a>
@@ -552,12 +352,11 @@
             </div>
         </div>
         <div class="bg-secondary text-center py-2">
-            <small>&copy; 2025 Club Dojo Judo Tarraco.</small>
+            <small>&copy; 2025 Club Judo Dojo Tarraco.</small>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="js/extraescolares.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init({

@@ -44,7 +44,7 @@
     <!-- Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
+            <div class="container-fluid">
                 <!-- Botón para dispositivos móviles -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
                     aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,12 +53,11 @@
 
                 <div class="collapse navbar-collapse" id="navbarContent">
                     <!-- Izquierda -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav  me-3 ms-auto">
                         <!-- Club Dojo Tarraco con menú desplegable -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-center active"
-                                href="#" id="dojoTarracoDropdown" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle fw-bold d-flex align-items-center text-center active" href="#"
+                                id="dojoTarracoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="images/icons/logodojotarraco.png" alt="Tarraco" width="30" class="me-2">
                                 <span>Club Dojo Tarraco</span>
                             </a>
@@ -68,12 +67,12 @@
                                 <li><a class="dropdown-item" href="patina-dojo-tarraco.html">Patinaje</a></li>
                             </ul>
                         </li>
-                        <!-- Club Dojo Roda de Bara / Judo Roda de Barà -->
+                        <!-- Club Dojo Roda/Judo Roda -->
                         <li class="nav-item">
                             <a class="nav-link fw-bold d-flex align-items-center text-center"
-                                href="dojo-roda-bara.html">
-                                <img src="images/icons/logodojoroda.png" alt="Roda de Barà" width="30" class="me-2">
-                                <span>Club Dojo/Judo Roda de Barà</span>
+                                href="dojo-roda.html">
+                                <img src="images/icons/logodojoroda.png" alt="Dojo Roda" width="30" class="me-2">
+                                <span>Club Dojo/Judo Roda</span>
                             </a>
                         </li>
                         <!-- Club Patina Castellvell -->
@@ -86,8 +85,8 @@
                         </li>
                     </ul>
 
-                    <!-- Parte Derecha -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- Derecha -->
+                    <ul class="navbar-nav ms-3 me-auto">
                         <!-- Inicio -->
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
@@ -120,19 +119,14 @@
                         </li>
                         <!-- Idioma -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="complementariasDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="images/icons/flag-espana.png" alt="España" width="20">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="languageDropdown"
+                                role="button" data-bs-toggle="dropdown">
+                                <span class="placeholder-icon"></span>
+                                <span>Idioma</span>
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark"
-                                aria-labelledby="complementariasDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="judo-dojo-tarraco-cat.html">
-                                        <img src="images/icons/flag-catalunya.png" alt="Catalunya" width="20"
-                                            class="me-2">
-                                        Català
-                                    </a>
-                                </li>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                                <li><a class="dropdown-item active" href="judo-dojo-tarraco.html">Español</a></li>
+                                <li><a class="dropdown-item" href="judo-dojo-tarraco-cat.html">Català</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -150,7 +144,7 @@
             <div class="container text-center hero-content" data-aos="fade-down" data-aos-duration="2000"
                 data-aos-delay="500">
                 <h1 class="display-2 fw-bold">Club Judo Dojo Tarraco</h1>
-                <p class="lead">Calidad, Educación, Formación y Rendimiento</p>
+                <p class="lead">CALIDAD, EDUCACIÓN, FORMACIÓN Y RENDIMIENTO</p>
             </div>
         </section>
 
@@ -214,19 +208,19 @@
                     <div class="col-md-6" data-aos="fade-right" data-aos-duration="1500">
                         <div class="card shadow mb-4">
                             <div class="card-header bg-primary text-white">
-                                <h5 class="mb-0">Eventos</h5>
+                                <h5 class="mb-0">Nuestros eventos</h5>
                             </div>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush lead">
-                                    <li class="list-group-item">Campus de Judo de Pre-temporada (Septiembre)</li>
-                                    <li class="list-group-item">Ne Waza (Competición de tierra) (Noviembre)</li>
-                                    <li class="list-group-item">Judo en Familia (Febrero)</li>
-                                    <li class="list-group-item">Tachi Waza (Competición de pie) (Marzo)</li>
-                                    <li class="list-group-item">Examen de cinturón (Abril)</li>
-                                    <li class="list-group-item">Colonias de Judo (Mayo)</li>
-                                    <li class="list-group-item">Exhibiciones de fin de curso (Mayo-Junio)</li>
-                                    <li class="list-group-item">Trofeo Judo Dojo Tarraco (Junio)</li>
-                                    <li class="list-group-item">Campus de Judo de fin de curso (Junio y Julio)</li>
+                                    <li class="list-group-item">Campus de Judo de Pre-temporada</li>
+                                    <li class="list-group-item">Ne Waza (Competición de suelo)</li>
+                                    <li class="list-group-item">Judo en Familia</li>
+                                    <li class="list-group-item">Tachi Waza (Competición de pie)</li>
+                                    <li class="list-group-item">Examen de cinturón</li>
+                                    <li class="list-group-item">Colonias de Judo</li>
+                                    <li class="list-group-item">Exhibiciones de fin de curso</li>
+                                    <li class="list-group-item">Trofeo Judo Dojo Tarraco</li>
+                                    <li class="list-group-item">Campus de Judo de fin de curso</li>
                                 </ul>
                             </div>
                         </div>
@@ -364,6 +358,47 @@
             </div>
         </section>
 
+        <!-- Sección "¿Por qué CLUB JUDO DOJO TARRACO?" -->
+        <section class="bg-light py-5 por-que">
+            <div class="container">
+                <h2 class="text-center mb-4 fw-normal">¿Por qué CLUB JUDO DOJO TARRACO?</h2>
+                <div class="row">
+                    <!-- Formación Integral -->
+                    <div class="col-md-4">
+                        <div class="card shadow-sm mb-4" data-aos="fade-up" data-aos-duration="2000"
+                            data-aos-delay="500">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Formación Integral</h5>
+                                <p class="card-text lead">Nuestro enfoque va más allá de enseñar técnicas de judo. Nos
+                                    centramos en el desarrollo físico, emocional y social de cada alumno.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ambiente Positivo -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Ambiente Positivo</h5>
+                                <p class="card-text lead">Creamos un entorno de respeto y cooperación donde los niños
+                                    aprenden a trabajar en equipo y desarrollar habilidades para toda la vida.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ambiente Positivo -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="900">
+                        <div class="card shadow-sm mb-4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold">Equipo de Profesionales</h5>
+                                <p class="card-text lead">Contamos con entrenadores con amplia experiencia,
+                                    comprometidos a
+                                    guiar a cada alumno según su nivel y ritmo de aprendizaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -386,17 +421,14 @@
                 <!-- Columna Navegación -->
                 <div class="col-md-4 mb-3">
                     <a href="index.html" class="text-light text-decoration-none">
-                        <h5>CLUBS</h5>
+                        <h5>CLUBES</h5>
                     </a>
                     <ul class="list-unstyled">
                         <li class="mb-2"><a href="judo-dojo-tarraco.html" class="text-light text-decoration-none">Dojo
                                 Judo Tarraco</a>
                         </li>
-                        <li class="mb-2"><a href="ju-jitsu-dojo-tarraco.html"
-                                class="text-light text-decoration-none">Ju-Jitsu Judo Tarraco</a>
-                        </li>
-                        <li class="mb-2"><a href="dojo-roda-bara.html" class="text-light text-decoration-none">
-                                Dojo/Judo Roda de Barà</a>
+                        <li class="mb-2"><a href="dojo-roda.html" class="text-light text-decoration-none">
+                                Dojo/Judo Roda</a>
                         </li>
                         <li class="mb-2"><a href="patina-dojo-tarraco.html"
                                 class="text-light text-decoration-none">Patina Dojo Tarraco</a>
@@ -434,7 +466,7 @@
             </div>
         </div>
         <div class="bg-secondary text-center py-2">
-            <small>&copy; 2025 Club Dojo Judo Tarraco.</small>
+            <small>&copy; 2025 Club Judo Dojo Tarraco.</small>
         </div>
     </footer>
 
