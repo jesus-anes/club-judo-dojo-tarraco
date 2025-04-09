@@ -1,3 +1,7 @@
+.about, .compromiso {
+    text-align: justify;
+}
+
 .hero-tatami {
     background: url("../images/dojo-roda/tatami-dojo-roda.jpeg") no-repeat center center;
     background-size: cover;

@@ -1,5 +1,9 @@
+.about, .compromiso {
+    text-align: justify;
+}
+
 .hero {
-    background: url('../images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.jpg') no-repeat center center;
+    background: url('../images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.JPG') no-repeat center center;
     background-size: cover;
     height: 600px;
     position: relative;
