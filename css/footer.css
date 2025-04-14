@@ -13,6 +13,12 @@ footer {
     margin-top: auto;
 }
 
+iframe {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
 @media (max-width: 1400px) {
 
     nav {
