@@ -13,8 +13,20 @@ footer {
     margin-top: auto;
 }
 
+@media (max-width: 991px) {
+    nav {
+        font-size: 16px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1400px) {
     nav {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 1401px) {
+    nav {
+        font-size: 16px;
     }
 }
