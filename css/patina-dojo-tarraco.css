@@ -1,16 +1,33 @@
-.about {
-    text-align: justify;
+.hero {
+    background: url('../images/patina-dojo-tarraco/encabezado-club-patina-dojo-tarraco.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    color: #fff;
 }
 
-.hero img {
-    width: 60%;
-    height: 60%;
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.about {
+    text-align: justify;
 }
 
 .list-group-item {
     background-color: #f0eeee;
 }
 
-.por-que .card{
+.por-que .card {
     min-height: 200px;
 }

@@ -3,8 +3,9 @@
 }
 
 .hero {
-    background: url('../images/judo-dojo-tarraco/encabezado-judo-dojo-tarraco.JPG') no-repeat center center;
+    background: url('../images/ju-jitsu/encabezado-ju-jitsu.jpg') no-repeat center center;
     background-size: cover;
+    background-position: top;
     height: 600px;
     position: relative;
     color: #fff;

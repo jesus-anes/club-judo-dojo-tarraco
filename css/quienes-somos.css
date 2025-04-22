@@ -1,3 +1,10 @@
-.about p{
+.about p {
     text-align: justify;
+}
+
+.about img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    max-width: 250px;
 }
