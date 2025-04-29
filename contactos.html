@@ -161,10 +161,15 @@
                                     <div class="accordion-body">
                                         <div class="mb-4">
                                             <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12022.149614007581!2d1.254021!3d41.122793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3fcd766486197%3A0xa3611ae57a796926!2sCentre%20Esportiu%20Royal%20Tarraco!5e0!3m2!1ses!2ses!4v1740573395094!5m2!1ses!2ses"
-                                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <div id="mapaJudoTarraco"
+                                                    class="d-flex justify-content-center align-items-center bg-secondary text-white rounded">
+                                                    <div class="text-center">
+                                                        <p>Para ver el mapa, acepta las cookies.</p>
+                                                        <button name="loadMapButton"
+                                                            class="btn btn-light btn-sm">Aceptar
+                                                            y cargar mapa</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled">
@@ -205,10 +210,15 @@
                                     <div class="accordion-body">
                                         <div class="mb-4">
                                             <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.6088956440067!2d1.4589368000000003!3d41.1866969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a3f3f40c33348f%3A0x33ea36d815c3c712!2sClub%20Judo%20Dojo%20Roda!5e0!3m2!1ses!2ses!4v1740573586476!5m2!1ses!2ses"
-                                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <div id="mapaRoda"
+                                                    class="d-flex justify-content-center align-items-center bg-secondary text-white rounded">
+                                                    <div class="text-center">
+                                                        <p>Para ver el mapa, acepta las cookies.</p>
+                                                        <button name="loadMapButton"
+                                                            class="btn btn-light btn-sm">Aceptar
+                                                            y cargar mapa</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled">
@@ -251,10 +261,15 @@
                                     <div class="accordion-body">
                                         <div class="mb-4">
                                             <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3005.576056268547!2d1.206455!3d41.121949!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a157fba34d1c45%3A0xd256dfc46f770413!2sAnillo%20Mediterr%C3%A1neo!5e0!3m2!1ses!2ses!4v1740574400725!5m2!1ses!2ses"
-                                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <div id="mapaPatinaTarraco"
+                                                    class="d-flex justify-content-center align-items-center bg-secondary text-white rounded">
+                                                    <div class="text-center">
+                                                        <p>Para ver el mapa, acepta las cookies.</p>
+                                                        <button name="loadMapButton"
+                                                            class="btn btn-light btn-sm">Aceptar
+                                                            y cargar mapa</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled">
@@ -311,10 +326,15 @@
                                     <div class="accordion-body">
                                         <div class="mb-4">
                                             <div class="ratio ratio-16x9 rounded overflow-hidden shadow">
-                                                <iframe
-                                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d375.36039276112746!2d1.0977659649398988!3d41.18071593966983!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a151760c52ccab%3A0xe6020040e7c00f0b!2sCarrer%20Pompeu%20Fabra%2C%201%2C%2043392%20Castellvell%20del%20Camp%2C%20Tarragona!5e0!3m2!1ses!2ses!4v1740574354472!5m2!1ses!2ses"
-                                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                <div id="mapaPatinaCastellvell"
+                                                    class="d-flex justify-content-center align-items-center bg-secondary text-white rounded">
+                                                    <div class="text-center">
+                                                        <p>Para ver el mapa, acepta las cookies.</p>
+                                                        <button name="loadMapButton"
+                                                            class="btn btn-light btn-sm">Aceptar
+                                                            y cargar mapa</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled">
@@ -415,16 +435,24 @@
         <div class="bg-secondary text-center py-2">
             <small>&copy; 2025 Club Judo Dojo Tarraco.</small>
         </div>
+        <div id="cookie-banner" class="cookie-banner bg-dark text-white p-3 shadow-lg rounded d-none">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                <div class="mb-2 mb-md-0">
+                    Utilizamos cookies propias y de terceros para mejorar tu experiencia de navegación.
+                    <a href="politica-cookies.html" class="text-decoration-underline text-light">Más información</a>.
+                </div>
+                <div class="d-flex gap-2">
+                    <button id="acceptCookies" class="btn btn-success btn-sm">Aceptar</button>
+                    <button id="rejectCookies" class="btn btn-secondary btn-sm">Rechazar</button>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            easing: 'slide',
-            once: true
-        });
-    </script>
+    <script src="js/cookies.js"></script>
+    <script src="js/aos.js"></script>
 </body>
 
 </html>
