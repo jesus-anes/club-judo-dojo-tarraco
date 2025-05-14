@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('cookies-choice', 'accepted');
         ocultarBanner();
         // Aquí podrías cargar elementos bloqueados si hace falta (por ejemplo: mapas, YouTube, etc.)
-        if (window.location.href.includes('contactos.html') || window.location.href.includes('contactos-cat.html')) {
+        if (/\/contactos(-cat)?(\.html)?$/i.test(window.location.pathname)) {
             loadMap();
         }
     });
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Aquí podrías bloquear aún más recursos si quieres
     });
 
-    if (window.location.href.includes('contactos.html') || window.location.href.includes('contactos-cat.html')) {
+    if (/\/contactos(-cat)?(\.html)?$/i.test(window.location.pathname)) {
         if (localStorage.getItem('cookies-choice') === 'accepted') {
             loadMap();
         } else {
